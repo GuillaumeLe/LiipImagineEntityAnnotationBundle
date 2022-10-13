@@ -1,0 +1,22 @@
+{
+    "name": "leroy/liip-imagine-entity-annotation-bundle",
+    "description": "Easily manage your liip imagine filter with entities",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.4",
+        "liip/imagine-bundle": "^2.8",
+        "symfony/framework-bundle": "^5.2||^6.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leroy\\LiipImagineEntityAnnotationBundle\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guillaume LEROY",
+            "email": "guillaumeleroy33@gmail.com"
+        }
+    ]
+}
