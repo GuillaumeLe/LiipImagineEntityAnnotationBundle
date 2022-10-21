@@ -12,16 +12,6 @@ Make sure Composer is installed globally, as explained in the
 [installation chapter](https://getcomposer.org/doc/00-intro.md)
 of the Composer documentation.
 
-The bundle has not been published yet, then should first add the repository in your `composer.json`: 
-```
-    "repositories": [
-        {
-            "url": "https://github.com/GuillaumeLe/LiipImagineEntityAnnotationBundle.git",
-            "type": "git"
-        }
-    ],
-```
-
 Applications that use Symfony Flex
 ----------------------------------
 
