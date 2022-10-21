@@ -1,0 +1,13 @@
+services:
+    liip_imagine_entity_annotation.hydration_subscriber:
+        class: Leroy\LiipImagineEntityAnnotationBundle\EventSubscriber\LiipFilterHydrationSubscriber
+        autowire: true
+        arguments:
+            $liipFilterEntityService: '@liip_imagine_entity_annotation.filter_entity_service'
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+    liip_imagine_entity_annotation.filter_entity_service:
+        class: Leroy\LiipImagineEntityAnnotationBundle\Service\LiipFilterEntityService
+        autowire: true
+        arguments:
+            $filterService: '@liip_imagine.service.filter'
