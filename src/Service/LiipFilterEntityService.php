@@ -14,7 +14,6 @@ class LiipFilterEntityService
     private FilterService $filterService;
     private PropertyAccessorInterface $propertyAccessor;
 
-    // Temp 
     private UploaderHelper $uploaderHelper;
 
 

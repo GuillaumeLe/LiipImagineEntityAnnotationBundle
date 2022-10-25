@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  composer:
+    image: composer
+    volumes:
+      - ./:/app
+
+  php:
+    image: php
+    volumes:
+      - ./:/srv/app
+    working_dir: /srv/app
